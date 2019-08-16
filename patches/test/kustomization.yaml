@@ -1,0 +1,7 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+bases:
+- ../../base-templates/
+patchesStrategicMerge:
+- flux-patch.yaml
+- default-patch.yaml
